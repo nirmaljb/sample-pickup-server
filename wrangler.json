@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "sample-pickup-backend",
+  "name": "sample-pickup-server",
   "main": "src/index.ts",
   "compatibility_date": "2025-02-10"
   // "compatibility_flags": [
