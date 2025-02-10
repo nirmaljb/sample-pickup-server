@@ -27,8 +27,8 @@ app.get('/todo', (c) => {
 });
 
 app.get('/todos', (c) => {
-  const upper_range = Math.floor(Math.random() * 10) + 1;
-  const lower_range = Math.floor(Math.random() * 10) + 1;
+  const upper_range = Math.floor(Math.random() * (10 - 5 + 1)) + 5;
+  const lower_range = Math.floor(Math.random() * (5 - 1 + 1)) + 1;
 
   const ranged_todos = todos[0].slice(lower_range, upper_range);
   return c.json({todos: ranged_todos});
